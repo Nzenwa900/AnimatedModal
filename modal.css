@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Raleway', san-serif;
+    font-size: 10px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #353535;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+header {
+    text-align: center;
+    color: white;
+    padding-bottom: 3.2rem;
+}
+header h1 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1;
+}
+header h1 span {
+    font-weight: 600;
+    color: #f7f7f7;
+}
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form button {
+     outline: none;
+     border: 2px solid #353535;
+     border-radius: 8px;
+     padding: 16px 32px;
+     background-color: #cecece;
+     color: #353535;
+     font-size: 1.6rem;
+     font-weight: 700;
+     transition: all .3s;
+     cursor: pointer;
+}
+form button:hover {
+    background-color: #e69500;
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.modal-content {
+    width: 80%;
+    max-width: 60rem;
+    margin: 15% auto;
+    background-color: white;
+    padding: 2.4rem;
+    border: 1px solid #ffda96;
+    text-align: center;
+    border-radius: 16px;
+    animation: slide ease .8s;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #353535;
+}
+@keyframes slide {
+    0% {
+        transform: translate(-40rem);
+    }
+    100% {
+        transform: translate(0rem);
+    }
+}
